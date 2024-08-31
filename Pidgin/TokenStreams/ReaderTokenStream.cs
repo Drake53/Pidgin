@@ -18,6 +18,8 @@ public class ReaderTokenStream : ITokenStream<char>
     /// <returns>4096.</returns>
     public int ChunkSizeHint => 4096;
 
+    void ITokenStream<char>.Return(ReadOnlySpan<char> leftovers) { }
+
     private readonly TextReader _input;
 
     /// <summary>

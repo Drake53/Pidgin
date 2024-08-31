@@ -38,9 +38,7 @@ public interface ITokenStream<TToken>
         "CA1716:Rename member so that it no longer conflicts with a reserved language keyword",
         Justification = "Would be a breaking change"
     )]
-    void Return(ReadOnlySpan<TToken> leftovers)
-    {
-    }
+    void Return(ReadOnlySpan<TToken> leftovers);
 
     /// <summary>
     /// A hint to the parser indicating a default number of tokens to request when calling <see cref="Read"/>.
@@ -53,5 +51,5 @@ public interface ITokenStream<TToken>
     /// The default is 1024.
     /// </summary>
     /// <returns>The default number of tokens to request when calling <see cref="Read"/>.</returns>
-    int ChunkSizeHint => 1024;
+    int ChunkSizeHint { get; }
 } }

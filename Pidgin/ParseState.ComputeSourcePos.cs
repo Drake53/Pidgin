@@ -54,10 +54,14 @@ public partial struct ParseState<TToken>
         var end = (int)(location - _lastSourcePosDeltaLocation);
 
         // coerce _span to Span<char>
+#if NETSTANDARD2_0
+        var input = Array.ConvertAll(_span.Slice(start, end).ToArray(), UnsafeCastToChar).AsSpan();
+#else
         var input = MemoryMarshal.CreateSpan(
             ref Unsafe.As<TToken, char>(ref MemoryMarshal.GetReference(_span)),
             _span.Length
         ).Slice(start, end);
+#endif
 
         var lines = 0;
         var cols = 0;
@@ -95,4 +99,8 @@ public partial struct ParseState<TToken>
 
         return _lastSourcePosDelta + new SourcePosDelta(lines, cols);
     }
+
+#if NETSTANDARD2_0
+    private static char UnsafeCastToChar(TToken token) => Unsafe.As<TToken, char>(ref token);
+#endif
 } }

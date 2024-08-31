@@ -24,7 +24,11 @@ namespace Pidgin {
 [EditorBrowsable(EditorBrowsableState.Advanced)]
 public ref partial struct ParseState<TToken>
 {
+#if NETSTANDARD2_0
+    private static readonly bool _needsClear = true;
+#else
     private static readonly bool _needsClear = RuntimeHelpers.IsReferenceOrContainsReferences<TToken>();
+#endif
 
     /// <summary>Gets the parser configuration.</summary>
     public IConfiguration<TToken> Configuration { get; }

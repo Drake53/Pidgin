@@ -19,6 +19,8 @@ public sealed class ReadOnlyListTokenStream<TToken> : ITokenStream<TToken>
     /// <returns>16.</returns>
     public int ChunkSizeHint => 16;
 
+    void ITokenStream<TToken>.Return(ReadOnlySpan<TToken> leftovers) { }
+
     private readonly IReadOnlyList<TToken> _input;
     private int _index = 0;
 

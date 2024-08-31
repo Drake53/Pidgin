@@ -19,6 +19,8 @@ public class EnumeratorTokenStream<TToken> : ITokenStream<TToken>
     /// <returns>16.</returns>
     public int ChunkSizeHint => 16;
 
+    void ITokenStream<TToken>.Return(ReadOnlySpan<TToken> leftovers) { }
+
     private readonly IEnumerator<TToken> _input;
 
     /// <summary>

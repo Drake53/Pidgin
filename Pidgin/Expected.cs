@@ -65,7 +65,11 @@ public readonly struct Expected<TToken> : IEquatable<Expected<TToken>>, ICompara
         sb.Append('"');
         if (_isChar)
         {
+#if NETSTANDARD2_0
+            sb.Append(Array.ConvertAll(tokens.ToBuilder().ToArray(), UnsafeCastToChar));
+#else
             sb.Append(UnsafeCastToChar(tokens.AsSpan()));
+#endif
         }
         else
         {
@@ -188,9 +192,13 @@ public readonly struct Expected<TToken> : IEquatable<Expected<TToken>>, ICompara
     public static bool operator <=(Expected<TToken> left, Expected<TToken> right)
         => left.CompareTo(right) <= 0;
 
+#if NETSTANDARD2_0
+    private static char UnsafeCastToChar(TToken token) => Unsafe.As<TToken, char>(ref token);
+#else
     private static ReadOnlySpan<char> UnsafeCastToChar(ReadOnlySpan<TToken> span)
         => MemoryMarshal.CreateReadOnlySpan(
             ref Unsafe.As<TToken, char>(ref MemoryMarshal.GetReference(span)),
             span.Length
         );
+#endif
 } }

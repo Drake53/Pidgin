@@ -18,6 +18,8 @@ public class StreamTokenStream : ITokenStream<byte>
     /// <returns>4096.</returns>
     public int ChunkSizeHint => 4096;
 
+    void ITokenStream<byte>.Return(ReadOnlySpan<byte> leftovers) { }
+
     private readonly Stream _input;
 
     /// <summary>

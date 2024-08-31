@@ -17,7 +17,11 @@ namespace Pidgin.TokenStreams {
 )]
 public class ResumableTokenStream<TToken> : ITokenStream<TToken>, IDisposable
 {
+#if NETSTANDARD2_0
+    private static readonly bool _needsClear = true;
+#else
     private static readonly bool _needsClear = RuntimeHelpers.IsReferenceOrContainsReferences<TToken>();
+#endif
     private readonly ArrayPool<TToken> _pool;
     private readonly ITokenStream<TToken> _next;
     private TToken[]? _buffer = null;
@@ -62,6 +66,8 @@ public class ResumableTokenStream<TToken> : ITokenStream<TToken>, IDisposable
 
         return bufferedCount + _next.Read(buffer[bufferedCount..]);
     }
+
+    int ITokenStream<TToken>.ChunkSizeHint => 1024;
 
     /// <summary>
     /// Push some un-consumed tokens back into the stream.
