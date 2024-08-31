@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// Represents the result of parsing.
@@ -216,4 +216,4 @@ public class Result<TToken, T>
         => Success
             ? new Result<TToken, U>((U)(object)_value!)
             : new Result<TToken, U>(Error!);
-}
+} }

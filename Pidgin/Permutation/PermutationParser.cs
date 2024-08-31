@@ -2,7 +2,7 @@ using System;
 using System.Collections.Immutable;
 using System.Linq;
 
-namespace Pidgin.Permutation;
+namespace Pidgin.Permutation {
 
 /// <summary>
 /// Contains tools for running sequences of parsers in an order-insensitive manner.
@@ -253,4 +253,4 @@ public sealed class PermutationParser<TToken, T>
     ) => _forest
         .ConvertAll(func)
         .Add(new PermutationParserBranchImpl<TToken, U, T, R>(parser, this, resultSelector));
-}
+} }

@@ -1,4 +1,4 @@
-namespace Pidgin;
+namespace Pidgin {
 
 public abstract partial class Parser<TToken, T>
 {
@@ -12,4 +12,4 @@ public abstract partial class Parser<TToken, T>
             Assert(x => x is U, x => $"Expected a {typeof(U).Name} but got a {x!.GetType().Name}")
             .Cast<U>()
             .Labelled($"result of type {typeof(U).Name}");
-}
+} }

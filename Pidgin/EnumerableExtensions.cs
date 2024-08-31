@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 
-namespace Pidgin;
+namespace Pidgin {
 
 internal static class EnumerableExtensions
 {
@@ -71,4 +71,4 @@ internal static class EnumerableExtensions
         // Reached the end of collections => assume equal
         return 0;
     }
-}
+} }

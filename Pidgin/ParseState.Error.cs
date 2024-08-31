@@ -1,6 +1,6 @@
 using System.Collections.Immutable;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public partial struct ParseState<TToken>
 {
@@ -40,4 +40,4 @@ public partial struct ParseState<TToken>
 
         return new ParseError<TToken>(_unexpected, _eof, builder.MoveToImmutable(), ErrorLocation, ComputeSourcePosDeltaAt(ErrorLocation), _message);
     }
-}
+} }

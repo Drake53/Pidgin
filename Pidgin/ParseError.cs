@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Text;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// Represents an error encountered during parsing.
@@ -183,4 +183,4 @@ public class ParseError<TToken> : IEquatable<ParseError<TToken>>
 
     /// <inheritdoc/>
     public override int GetHashCode() => HashCode.Combine(Unexpected, EOF, Expected, ErrorOffset, ErrorPos, Message);
-}
+} }

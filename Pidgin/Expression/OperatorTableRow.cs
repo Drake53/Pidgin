@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Pidgin.Expression;
+namespace Pidgin.Expression {
 
 /// <summary>
 /// Represents a row in a table of operators.
@@ -92,4 +92,4 @@ public sealed class OperatorTableRow<TToken, T>
             PostfixOps.Concat(otherRow.PostfixOps)
         );
     }
-}
+} }

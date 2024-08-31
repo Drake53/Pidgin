@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public abstract partial class Parser<TToken, T>
 {
@@ -19,4 +19,4 @@ public abstract partial class Parser<TToken, T>
 
         return Parser.OneOf(this, parser);
     }
-}
+} }

@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin.Configuration;
+namespace Pidgin.Configuration {
 
 internal class OverrideConfiguration<TToken> : IConfiguration<TToken>
 {
@@ -17,4 +17,4 @@ internal class OverrideConfiguration<TToken> : IConfiguration<TToken>
         SourcePosCalculator = posCalculator ?? next.SourcePosCalculator;
         ArrayPoolProvider = arrayPoolProvider ?? next.ArrayPoolProvider;
     }
-}
+} }

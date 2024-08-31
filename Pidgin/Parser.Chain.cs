@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 
 using Pidgin.Configuration;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public partial class Parser<TToken, T>
 {
@@ -83,4 +83,4 @@ internal class ChainAtLeastOnceLParser<TToken, T, U, TChainer> : Parser<TToken, 
         result = chainer.GetResult();
         return true;
     }
-}
+} }

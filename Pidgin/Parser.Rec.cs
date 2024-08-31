@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -100,4 +100,4 @@ internal sealed class RecParser<TToken, T> : Parser<TToken, T>
 
     public sealed override bool TryParse(ref ParseState<TToken> state, ref PooledList<Expected<TToken>> expecteds, [MaybeNullWhen(false)] out T result)
         => _lazy.Value.TryParse(ref state, ref expecteds, out result);
-}
+} }

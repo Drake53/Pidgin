@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// Constructor functions, extension methods and utilities for working with <see cref="Maybe{T}"/>.
@@ -240,4 +240,4 @@ public readonly struct Maybe<T> : IEquatable<Maybe<T>>
             return hash;
         }
     }
-}
+} }

@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public abstract partial class Parser<TToken, T>
 {
@@ -22,4 +22,4 @@ public abstract partial class Parser<TToken, T>
     /// <returns>A parser which runs the current parser and applies a selector function.</returns>
     public Parser<TToken, U> Slice<U>(ReadOnlySpanFunc<TToken, T, U> selector)
         => MapWithInput(selector);
-}
+} }

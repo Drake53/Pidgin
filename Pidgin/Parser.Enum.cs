@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -34,4 +34,4 @@ public static partial class Parser
             .Select(x => System.Enum.Parse<TEnum>(x, true))
             .Labelled("enum " + typeof(TEnum).Name);
     }
-}
+} }

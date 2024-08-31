@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin;
+namespace Pidgin {
 
 #pragma warning disable CA1032 // Implement standard exception constructors
 
@@ -33,6 +33,6 @@ public class ParseException<TToken> : ParseException
     {
         Error = error;
     }
-}
+} }
 
 #pragma warning restore CA1032 // Implement standard exception constructors

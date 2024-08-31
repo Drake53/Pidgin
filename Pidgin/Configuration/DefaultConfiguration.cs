@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin.Configuration;
+namespace Pidgin.Configuration {
 
 /// <summary>
 /// A default configuration for any token type.
@@ -29,4 +29,4 @@ public class DefaultConfiguration<TToken> : IConfiguration<TToken>
     /// Always returns <see cref="DefaultArrayPoolProvider.Instance"/>.
     /// </summary>
     public virtual IArrayPoolProvider ArrayPoolProvider { get; } = DefaultArrayPoolProvider.Instance;
-}
+} }

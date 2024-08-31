@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public partial class Parser<TToken, T>
 {
@@ -48,4 +48,4 @@ internal sealed class RecoverWithParser<TToken, T> : Parser<TToken, T>
 
         return recoverParser.TryParse(ref state, ref expecteds, out result);
     }
-}
+} }

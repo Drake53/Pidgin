@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public partial class Parser<TToken, T>
 {
@@ -49,4 +49,4 @@ public partial class Parser<TToken, T>
     /// </summary>
     /// <returns>A parser which runs the current parser and prints the result to the console.</returns>
     public Parser<TToken, T> TraceResult() => Trace(x => x!.ToString()!);
-}
+} }

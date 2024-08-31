@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// A function which computes a result from a <see cref="ReadOnlySpan{TToken}"/> and an additional argument.
@@ -12,3 +12,5 @@ namespace Pidgin;
 /// <typeparam name="TReturn">The type of the result computed by the function.</typeparam>
 /// <returns>The result.</returns>
 public delegate TReturn ReadOnlySpanFunc<T, in TParam, out TReturn>(ReadOnlySpan<T> span, TParam param);
+
+}

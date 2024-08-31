@@ -1,6 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser<TToken>
 {
@@ -26,4 +26,4 @@ internal sealed class EndParser<TToken> : Parser<TToken, Unit>
         result = Unit.Value;
         return true;
     }
-}
+} }

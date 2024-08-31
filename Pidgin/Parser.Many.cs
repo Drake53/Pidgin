@@ -3,7 +3,7 @@ using System.Buffers;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -236,4 +236,4 @@ public abstract partial class Parser<TToken, T>
         {
         }
     }
-}
+} }

@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser<TToken>
 {
@@ -159,4 +159,4 @@ internal sealed class SequenceTokenParser<TToken, TEnumerable> : Parser<TToken, 
         result = _value;
         return true;
     }
-}
+} }

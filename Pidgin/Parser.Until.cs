@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public abstract partial class Parser<TToken, T>
 {
@@ -302,4 +302,4 @@ internal sealed class AtLeastOnceThenParser<TToken, T, U> : Parser<TToken, (IEnu
             ts?.Add(itemResult!);
         }
     }
-}
+} }

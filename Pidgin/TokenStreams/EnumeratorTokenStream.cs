@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin.TokenStreams;
+namespace Pidgin.TokenStreams {
 
 /// <summary>
 /// An <see cref="ITokenStream{TToken}"/> implementation based on an <see cref="IEnumerator{TToken}"/>.
@@ -52,4 +52,4 @@ public class EnumeratorTokenStream<TToken> : ITokenStream<TToken>
 
         return buffer.Length;
     }
-}
+} }

@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public abstract partial class Parser<TToken, T>
 {
@@ -64,4 +64,4 @@ internal class MapWithInputParser<TToken, T, U> : Parser<TToken, U>
 
         return true;
     }
-}
+} }

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin.TokenStreams;
+namespace Pidgin.TokenStreams {
 
 /// <summary>
 /// An <see cref="ITokenStream{TToken}"/> implementation based on an <see cref="IReadOnlyList{TToken}"/>.
@@ -49,4 +49,4 @@ public sealed class ReadOnlyListTokenStream<TToken> : ITokenStream<TToken>
 
         return actualLength;
     }
-}
+} }

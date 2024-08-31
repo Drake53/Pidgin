@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -242,4 +242,4 @@ public static partial class Parser
             .Assert(x => x.HasValue, "Couldn't parse a double")
             .Select(x => x!.Value)
             .Labelled($"real number");
-}
+} }

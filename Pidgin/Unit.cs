@@ -1,4 +1,4 @@
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// An uninteresting type with only one value (<see cref="Value"/>) and no fields.
@@ -14,4 +14,4 @@ public sealed class Unit
     /// The single unique <see cref="Unit"/> value.
     /// </summary>
     public static Unit Value { get; } = new Unit();
-}
+} }

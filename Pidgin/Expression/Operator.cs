@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Pidgin.Expression;
+namespace Pidgin.Expression {
 
 /// <summary>
 /// Methods to create <see cref="OperatorTableRow{TToken, T}"/> values.
@@ -276,4 +276,4 @@ public static class Operator
     /// <returns>A row in a table of operators which contains a chainable collection of postfix operators.</returns>
     public static OperatorTableRow<TToken, T> PostfixChainable<TToken, T>(params Parser<TToken, Func<T, T>>[] opParsers)
         => PostfixChainable(opParsers.AsEnumerable());
-}
+} }

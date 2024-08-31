@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// Constructor functions, extension methods and utilities for <see cref="Parser{TToken, T}"/>.
@@ -60,4 +60,4 @@ public abstract partial class Parser<TToken, T>
         ref PooledList<Expected<TToken>> expecteds,
         [MaybeNullWhen(false)] out T result
     );
-}
+} }

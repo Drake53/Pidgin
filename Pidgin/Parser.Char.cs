@@ -6,7 +6,7 @@ using System.Linq;
 
 using static Pidgin.Parser<char>;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -112,4 +112,4 @@ public static partial class Parser
     /// A parser that parses and returns a single Unicode separator character.
     /// </summary>
     public static Parser<char, char> Separator { get; } = Token(c => char.IsSeparator(c)).Labelled("separator");
-}
+} }

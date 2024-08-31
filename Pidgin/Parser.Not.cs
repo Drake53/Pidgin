@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -56,4 +56,4 @@ internal sealed class NegatedParser<TToken, T> : Parser<TToken, Unit>
         result = Unit.Value;
         return true;
     }
-}
+} }

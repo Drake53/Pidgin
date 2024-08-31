@@ -3,7 +3,7 @@ using System;
 using static Pidgin.Parser;
 using static Pidgin.Parser<char>;
 
-namespace Pidgin.Comment;
+namespace Pidgin.Comment {
 
 /// <summary>
 /// Contains functions to build parsers which skip over comments.
@@ -89,4 +89,4 @@ public static class CommentParser
 
         return parser;
     }
-}
+} }

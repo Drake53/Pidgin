@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 
-namespace Pidgin.TokenStreams;
+namespace Pidgin.TokenStreams {
 
 /// <summary>
 /// An <see cref="ITokenStream{TToken}"/> implementation based on a <see cref="TextReader"/>.
@@ -37,4 +37,4 @@ public class ReaderTokenStream : ITokenStream<char>
     /// <param name="buffer">The buffer to read tokens into.</param>
     /// <returns>The actual number of tokens read.</returns>
     public int Read(Span<char> buffer) => _input.Read(buffer);
-}
+} }

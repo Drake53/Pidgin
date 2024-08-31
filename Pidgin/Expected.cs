@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// Represents a parsing expectation for error reporting.
@@ -193,4 +193,4 @@ public readonly struct Expected<TToken> : IEquatable<Expected<TToken>>, ICompara
             ref Unsafe.As<TToken, char>(ref MemoryMarshal.GetReference(span)),
             span.Length
         );
-}
+} }

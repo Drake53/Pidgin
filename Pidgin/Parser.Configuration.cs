@@ -2,7 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 
 using Pidgin.Configuration;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser<TToken>
 {
@@ -17,4 +17,4 @@ internal class ConfigurationParser<TToken> : Parser<TToken, IConfiguration<TToke
         result = state.Configuration;
         return true;
     }
-}
+} }

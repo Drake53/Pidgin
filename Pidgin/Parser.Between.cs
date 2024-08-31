@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public abstract partial class Parser<TToken, T>
 {
@@ -44,4 +44,4 @@ public abstract partial class Parser<TToken, T>
 
         return Parser.Map((u, t, v) => t, parser1, this, parser2);
     }
-}
+} }

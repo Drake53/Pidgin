@@ -4,7 +4,7 @@ using System.Linq;
 
 using static Pidgin.Parser;
 
-namespace Pidgin.Expression;
+namespace Pidgin.Expression {
 
 /// <summary>
 /// <para>
@@ -327,4 +327,4 @@ public static class ExpressionParser
 
         public T ApplyL(T arg) => Func(arg, Arg);
     }
-}
+} }

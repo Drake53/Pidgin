@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public abstract partial class Parser<TToken, T>
 {
@@ -111,4 +111,4 @@ internal sealed class AssertParser<TToken, T> : Parser<TToken, T>
         return true;
 #pragma warning restore CS8762
     }
-}
+} }

@@ -1,4 +1,4 @@
-namespace Pidgin.Expression;
+namespace Pidgin.Expression {
 
 /// <summary>
 /// The associativity of the binary operator: left-associative, right-associative, or non-associative.
@@ -19,4 +19,4 @@ public enum BinaryOperatorType
     /// Denotes a right-associative binary operator
     /// </summary>
     RightAssociative
-}
+} }

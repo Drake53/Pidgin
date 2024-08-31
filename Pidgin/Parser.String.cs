@@ -2,7 +2,7 @@ using System;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -102,4 +102,4 @@ internal sealed class CIStringParser : Parser<char, string>
         result = span.ToString();
         return true;
     }
-}
+} }

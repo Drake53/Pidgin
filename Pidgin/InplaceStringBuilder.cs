@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.CompilerServices;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// A mutable struct! Careful!.
@@ -43,4 +43,4 @@ internal struct InplaceStringBuilder
 
         return _value;
     }
-}
+} }

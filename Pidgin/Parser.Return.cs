@@ -1,4 +1,4 @@
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser<TToken>
 {
@@ -26,4 +26,4 @@ internal sealed class ReturnParser<TToken, T> : Parser<TToken, T>
         result = _value;
         return true;
     }
-}
+} }

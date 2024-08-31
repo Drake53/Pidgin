@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -217,4 +217,4 @@ internal sealed class OneOfParser<TToken, T> : Parser<TToken, T>
 
         return new OneOfParser<TToken, T>(list.ToArray());
     }
-}
+} }

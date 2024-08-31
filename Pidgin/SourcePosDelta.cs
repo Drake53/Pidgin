@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// Represents a difference in textual lines and columns corresponding to a region of an input stream.
@@ -133,4 +133,4 @@ public readonly struct SourcePosDelta : IEquatable<SourcePosDelta>, IComparable<
     /// <param name="right">The right <see cref="SourcePosDelta"/>.</param>
     public static bool operator <=(SourcePosDelta left, SourcePosDelta right)
         => left.CompareTo(right) <= 0;
-}
+} }

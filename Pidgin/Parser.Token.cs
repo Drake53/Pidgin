@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser<TToken>
 {
@@ -109,4 +109,4 @@ internal sealed class PredicateTokenParser<TToken> : Parser<TToken, TToken>
         result = token;
         return true;
     }
-}
+} }

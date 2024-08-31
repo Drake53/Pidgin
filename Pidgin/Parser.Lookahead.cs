@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -47,4 +47,4 @@ internal sealed class LookaheadParser<TToken, T> : Parser<TToken, T>
         state.DiscardBookmark(bookmark);
         return false;
     }
-}
+} }

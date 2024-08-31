@@ -1,4 +1,4 @@
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser<TToken>
 {
@@ -22,4 +22,4 @@ internal sealed class CurrentOffsetParser<TToken> : Parser<TToken, long>
         result = state.Location;
         return true;
     }
-}
+} }

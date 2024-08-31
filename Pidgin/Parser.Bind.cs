@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public abstract partial class Parser<TToken, T>
 {
@@ -83,4 +83,4 @@ internal sealed class BindParser<TToken, T, U, R> : Parser<TToken, R>
         result = _result(childResult!, nextResult!);
         return true;
     }
-}
+} }

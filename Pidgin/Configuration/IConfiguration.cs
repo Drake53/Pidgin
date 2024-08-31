@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin.Configuration;
+namespace Pidgin.Configuration {
 
 /// <summary>
 /// Represents a parser configuration.
@@ -17,4 +17,4 @@ public interface IConfiguration<TToken>
     /// The <see cref="IArrayPoolProvider"/>.
     /// </summary>
     IArrayPoolProvider ArrayPoolProvider { get; }
-}
+} }

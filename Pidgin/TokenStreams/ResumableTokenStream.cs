@@ -3,7 +3,7 @@ using System.Buffers;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 
-namespace Pidgin.TokenStreams;
+namespace Pidgin.TokenStreams {
 
 /// <summary>
 /// An <see cref="ITokenStream{TToken}"/> implementation which wraps another <see cref="ITokenStream{TToken}"/>
@@ -115,4 +115,4 @@ public class ResumableTokenStream<TToken> : ITokenStream<TToken>, IDisposable
             _bufferStart = 0;
         }
     }
-}
+} }

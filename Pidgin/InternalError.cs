@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace Pidgin;
+namespace Pidgin {
 
 [StructLayout(LayoutKind.Auto)]
 internal readonly struct InternalError<TToken>
@@ -20,4 +20,4 @@ internal readonly struct InternalError<TToken>
         ErrorLocation = errorLocation;
         Message = message;
     }
-}
+} }

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public partial class Parser<TToken, T>
 {
@@ -53,4 +53,4 @@ internal sealed class WithExpectedParser<TToken, T> : Parser<TToken, T>
         // result is not null here
         return success;
     }
-}
+} }

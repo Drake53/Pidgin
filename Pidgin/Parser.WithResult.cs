@@ -1,4 +1,4 @@
-namespace Pidgin;
+namespace Pidgin {
 
 public partial class Parser<TToken, T>
 {
@@ -43,4 +43,4 @@ public partial class Parser<TToken, T>
     /// <returns>A parser which behaves like the current parser but returns <see cref="Unit.Value"/>.</returns>
     public Parser<TToken, Unit> IgnoreResult()
         => WithResult(Unit.Value);
-}
+} }

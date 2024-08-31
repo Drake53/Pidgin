@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <TargetFramework>net5.0</TargetFramework>
         <CheckEolTargetFramework>false</CheckEolTargetFramework>
-        <LangVersion>12</LangVersion>
+        <LangVersion>9</LangVersion>
         <IsAotCompatible>true</IsAotCompatible>
         <IsTrimmable>true</IsTrimmable>
     </PropertyGroup>

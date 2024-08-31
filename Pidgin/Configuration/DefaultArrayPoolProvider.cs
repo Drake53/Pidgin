@@ -1,6 +1,6 @@
 using System.Buffers;
 
-namespace Pidgin.Configuration;
+namespace Pidgin.Configuration {
 
 /// <summary>
 /// Always returns <see cref="ArrayPool{T}.Shared"/>.
@@ -22,4 +22,4 @@ public class DefaultArrayPoolProvider : IArrayPoolProvider
     /// The shared global instance of <see cref="DefaultArrayPoolProvider"/>.
     /// </summary>
     public static IArrayPoolProvider Instance { get; } = new DefaultArrayPoolProvider();
-}
+} }

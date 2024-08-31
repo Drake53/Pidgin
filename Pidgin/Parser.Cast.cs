@@ -1,4 +1,4 @@
-namespace Pidgin;
+namespace Pidgin {
 
 public abstract partial class Parser<TToken, T>
 {
@@ -9,4 +9,4 @@ public abstract partial class Parser<TToken, T>
     /// <exception cref="System.InvalidCastException">Thrown when the return value is not an instance of <typeparamref name="U"/>.</exception>
     /// <returns>A parser which returns this parser's return value casted to <typeparamref name="U"/>.</returns>
     public Parser<TToken, U> Cast<U>() => Select(x => (U)(object)x!);
-}
+} }

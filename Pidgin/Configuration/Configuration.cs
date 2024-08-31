@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin.Configuration;
+namespace Pidgin.Configuration {
 
 /// <summary>
 /// Methods for creating and updating <see cref="IConfiguration{TToken}"/>s.
@@ -76,4 +76,4 @@ public static class Configuration
 
         return new OverrideConfiguration<TToken>(configuration, arrayPoolProvider: arrayPoolProvider);
     }
-}
+} }

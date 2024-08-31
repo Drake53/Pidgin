@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// Represents a (line, col) position in an input stream.
@@ -134,4 +134,4 @@ public readonly struct SourcePos : IEquatable<SourcePos>, IComparable<SourcePos>
     /// <param name="right">The right <see cref="SourcePos"/>.</param>
     public static bool operator <=(SourcePos left, SourcePos right)
         => left.CompareTo(right) <= 0;
-}
+} }

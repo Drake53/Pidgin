@@ -1,4 +1,4 @@
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -9,4 +9,4 @@ public static partial class Parser
         = String("\r\n")
             .Or(String("\n"))
             .Labelled("end of line");
-}
+} }

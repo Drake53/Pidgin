@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 using static Pidgin.Parser<char>;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -96,4 +96,4 @@ internal class SkipWhitespacesParser : Parser<char, Unit>
         state.Advance(chunk.Length);
         return true;
     }
-}
+} }

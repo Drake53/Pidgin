@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin.Configuration;
+namespace Pidgin.Configuration {
 
 /// <summary>
 /// A default configuration for textual input.
@@ -21,4 +21,4 @@ public class CharDefaultConfiguration : DefaultConfiguration<char>
             : token == '\t'
                 ? new SourcePosDelta(0, 4)
                 : SourcePosDelta.OneCol;
-}
+} }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser
 {
@@ -89,4 +89,4 @@ internal sealed class RepeatStringParser<TToken> : Parser<TToken, string>
         result = builder.ToString();
         return true;
     }
-}
+} }

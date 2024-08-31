@@ -1,4 +1,4 @@
-namespace Pidgin;
+namespace Pidgin {
 
 public abstract partial class Parser<TToken, T>
 {
@@ -24,4 +24,4 @@ public abstract partial class Parser<TToken, T>
     /// <returns>A parser which applies the current parser and returns <see cref="Maybe.Nothing{T}()"/> if the current parser fails without consuming any input.</returns>
     public Parser<TToken, Maybe<T>> Optional()
         => Select(Maybe.Just).Or(ReturnNothing);
-}
+} }

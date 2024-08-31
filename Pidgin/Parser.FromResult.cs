@@ -1,4 +1,4 @@
-namespace Pidgin;
+namespace Pidgin {
 
 public static partial class Parser<TToken>
 {
@@ -9,4 +9,4 @@ public static partial class Parser<TToken>
     /// <typeparam name="T">The type of the value to return.</typeparam>
     /// <returns>A parser which returns the specified value without consuming any input.</returns>
     public static Parser<TToken, T> FromResult<T>(T result) => Return(result);
-}
+} }

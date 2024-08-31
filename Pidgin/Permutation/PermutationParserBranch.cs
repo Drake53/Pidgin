@@ -1,6 +1,6 @@
 using System;
 
-namespace Pidgin.Permutation;
+namespace Pidgin.Permutation {
 
 internal abstract class PermutationParserBranch<TToken, T>
 {
@@ -45,4 +45,4 @@ internal sealed class PermutationParserBranchImpl<TToken, U, T, R> : Permutation
         var this_func = _func;
         return Parser.Map((x, y) => this_func(y, x), _parser, _perm.Build());
     }
-}
+} }

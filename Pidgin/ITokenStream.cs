@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// An interface for streams of <typeparamref name="TToken"/>, which can be consumed by <see cref="Parser{TToken, T}"/>s.
@@ -54,4 +54,4 @@ public interface ITokenStream<TToken>
     /// </summary>
     /// <returns>The default number of tokens to request when calling <see cref="Read"/>.</returns>
     int ChunkSizeHint => 1024;
-}
+} }

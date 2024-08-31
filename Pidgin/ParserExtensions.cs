@@ -8,7 +8,7 @@ using Pidgin.TokenStreams;
 
 using Config = Pidgin.Configuration.Configuration;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// Extension methods for running parsers.
@@ -324,4 +324,4 @@ public static class ParserExtensions
 
     private static T GetValueOrThrow<TToken, T>(Result<TToken, T> result)
         => result.Success ? result.Value : throw new ParseException<TToken>(result.Error!);
-}
+} }

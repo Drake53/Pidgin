@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// A version of <see cref="List{T}"/> which uses an array pool.
@@ -353,4 +353,4 @@ public struct PooledList<T> : IDisposable, IList<T>
     [MethodImpl(MethodImplOptions.NoInlining)]
     private static Exception CreateInvalidOperationException()
         => new InvalidOperationException();
-}
+} }

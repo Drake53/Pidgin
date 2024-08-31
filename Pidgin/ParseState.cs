@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 
 using Pidgin.Configuration;
 
-namespace Pidgin;
+namespace Pidgin {
 
 /// <summary>
 /// Represents the state of a parsing process.
@@ -314,4 +314,4 @@ public ref partial struct ParseState<TToken>
             _buffer = null;
         }
     }
-}
+} }

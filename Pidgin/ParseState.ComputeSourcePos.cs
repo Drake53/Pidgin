@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 using Pidgin.Configuration;
 
-namespace Pidgin;
+namespace Pidgin {
 
 public partial struct ParseState<TToken>
 {
@@ -95,4 +95,4 @@ public partial struct ParseState<TToken>
 
         return _lastSourcePosDelta + new SourcePosDelta(lines, cols);
     }
-}
+} }
